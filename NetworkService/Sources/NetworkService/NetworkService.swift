@@ -15,7 +15,7 @@ public enum HTTPMethod: String, CaseIterable {
     case delete = "DELETE"
 }
 
-enum NetworkError: Error {
+public enum NetworkError: Error {
     case invalidUrl
     case noInternet
     case networkError
@@ -60,6 +60,8 @@ public protocol NetworkServiceProtocol {
 }
 
 public final class NetworkService: NetworkServiceProtocol {
+    
+    public init() {}
     
     public func fetchData<Request>(request: Request, completion: @escaping (Result<Request.Response, Error>) -> Void) where Request : DataRequest {
         

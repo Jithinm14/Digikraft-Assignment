@@ -15,23 +15,23 @@ public protocol DIContainerProtocol {
 }
 
 public final class DIContainer: DIContainerProtocol {
-    
+
     static let shared = DIContainer()
-    
+
     private init() {}
-    
+
     var components: [String: Any] = [:]
-    
+
     public func resolveDependency<Component>(type: Component.Type) -> Component? {
         return components["\(type)"] as? Component
     }
-    
+
     public func registerDependency<Component>(type: Component.Type, component: Any) {
         components["\(type)"] = component
     }
-    
+
     public func registerAppDependencies() {
         registerDependency(type: NetworkService.self, component: NetworkService())
     }
-    
+
 }
