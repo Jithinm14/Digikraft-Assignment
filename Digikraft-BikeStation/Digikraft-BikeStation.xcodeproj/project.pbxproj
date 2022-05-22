@@ -18,6 +18,7 @@
 		5E97C9BF283A407E00C94E0E /* NetworkService in Frameworks */ = {isa = PBXBuildFile; productRef = 5E97C9BE283A407E00C94E0E /* NetworkService */; };
 		5E97C9C2283A41F700C94E0E /* LocationService in Frameworks */ = {isa = PBXBuildFile; productRef = 5E97C9C1283A41F700C94E0E /* LocationService */; };
 		5E97C9C5283A536200C94E0E /* DependencyInjectionService in Frameworks */ = {isa = PBXBuildFile; productRef = 5E97C9C4283A536200C94E0E /* DependencyInjectionService */; };
+		5EF1862C283A76E700669C27 /* BikeStationListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EF1862B283A76E700669C27 /* BikeStationListViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,6 +53,7 @@
 		5E97C9BD283A406D00C94E0E /* NetworkService */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = NetworkService; path = ../NetworkService; sourceTree = "<group>"; };
 		5E97C9C0283A41E500C94E0E /* LocationService */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = LocationService; path = ../LocationService; sourceTree = "<group>"; };
 		5E97C9C3283A534E00C94E0E /* DependencyInjectionService */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = DependencyInjectionService; path = ../DependencyInjectionService; sourceTree = "<group>"; };
+		5EF1862B283A76E700669C27 /* BikeStationListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BikeStationListViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -115,6 +117,7 @@
 				5E97C991283A371000C94E0E /* ContentView.swift */,
 				5E97C993283A371200C94E0E /* Assets.xcassets */,
 				5E97C995283A371200C94E0E /* Preview Content */,
+				5EF1862B283A76E700669C27 /* BikeStationListViewModel.swift */,
 			);
 			path = "Digikraft-BikeStation";
 			sourceTree = "<group>";
@@ -288,6 +291,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				5E97C992283A371000C94E0E /* ContentView.swift in Sources */,
+				5EF1862C283A76E700669C27 /* BikeStationListViewModel.swift in Sources */,
 				5E97C990283A371000C94E0E /* Digikraft_BikeStationApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
