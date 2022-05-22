@@ -14,6 +14,7 @@
 		5E97C9A1283A371200C94E0E /* Digikraft_BikeStationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E97C9A0283A371200C94E0E /* Digikraft_BikeStationTests.swift */; };
 		5E97C9AB283A371200C94E0E /* Digikraft_BikeStationUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E97C9AA283A371200C94E0E /* Digikraft_BikeStationUITests.swift */; };
 		5E97C9AD283A371200C94E0E /* Digikraft_BikeStationUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E97C9AC283A371200C94E0E /* Digikraft_BikeStationUITestsLaunchTests.swift */; };
+		5E97C9BC283A3F0F00C94E0E /* BikeStationFeature in Frameworks */ = {isa = PBXBuildFile; productRef = 5E97C9BB283A3F0F00C94E0E /* BikeStationFeature */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +45,7 @@
 		5E97C9A6283A371200C94E0E /* Digikraft-BikeStationUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Digikraft-BikeStationUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5E97C9AA283A371200C94E0E /* Digikraft_BikeStationUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Digikraft_BikeStationUITests.swift; sourceTree = "<group>"; };
 		5E97C9AC283A371200C94E0E /* Digikraft_BikeStationUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Digikraft_BikeStationUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		5E97C9B9283A3E9F00C94E0E /* BikeStationFeature */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = BikeStationFeature; path = ../BikeStationFeature; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,6 +53,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5E97C9BC283A3F0F00C94E0E /* BikeStationFeature in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -74,10 +77,12 @@
 		5E97C983283A371000C94E0E = {
 			isa = PBXGroup;
 			children = (
+				5E97C9B9283A3E9F00C94E0E /* BikeStationFeature */,
 				5E97C98E283A371000C94E0E /* Digikraft-BikeStation */,
 				5E97C99F283A371200C94E0E /* Digikraft-BikeStationTests */,
 				5E97C9A9283A371200C94E0E /* Digikraft-BikeStationUITests */,
 				5E97C98D283A371000C94E0E /* Products */,
+				5E97C9BA283A3F0F00C94E0E /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -127,6 +132,13 @@
 			path = "Digikraft-BikeStationUITests";
 			sourceTree = "<group>";
 		};
+		5E97C9BA283A3F0F00C94E0E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -143,6 +155,9 @@
 			dependencies = (
 			);
 			name = "Digikraft-BikeStation";
+			packageProductDependencies = (
+				5E97C9BB283A3F0F00C94E0E /* BikeStationFeature */,
+			);
 			productName = "Digikraft-BikeStation";
 			productReference = 5E97C98C283A371000C94E0E /* Digikraft-BikeStation.app */;
 			productType = "com.apple.product-type.application";
@@ -577,6 +592,13 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		5E97C9BB283A3F0F00C94E0E /* BikeStationFeature */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = BikeStationFeature;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 5E97C984283A371000C94E0E /* Project object */;
 }
