@@ -17,6 +17,7 @@
 		5E97C9BC283A3F0F00C94E0E /* BikeStationFeature in Frameworks */ = {isa = PBXBuildFile; productRef = 5E97C9BB283A3F0F00C94E0E /* BikeStationFeature */; };
 		5E97C9BF283A407E00C94E0E /* NetworkService in Frameworks */ = {isa = PBXBuildFile; productRef = 5E97C9BE283A407E00C94E0E /* NetworkService */; };
 		5E97C9C2283A41F700C94E0E /* LocationService in Frameworks */ = {isa = PBXBuildFile; productRef = 5E97C9C1283A41F700C94E0E /* LocationService */; };
+		5E97C9C5283A536200C94E0E /* DependencyInjectionService in Frameworks */ = {isa = PBXBuildFile; productRef = 5E97C9C4283A536200C94E0E /* DependencyInjectionService */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,6 +51,7 @@
 		5E97C9B9283A3E9F00C94E0E /* BikeStationFeature */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = BikeStationFeature; path = ../BikeStationFeature; sourceTree = "<group>"; };
 		5E97C9BD283A406D00C94E0E /* NetworkService */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = NetworkService; path = ../NetworkService; sourceTree = "<group>"; };
 		5E97C9C0283A41E500C94E0E /* LocationService */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = LocationService; path = ../LocationService; sourceTree = "<group>"; };
+		5E97C9C3283A534E00C94E0E /* DependencyInjectionService */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = DependencyInjectionService; path = ../DependencyInjectionService; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +60,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				5E97C9BC283A3F0F00C94E0E /* BikeStationFeature in Frameworks */,
+				5E97C9C5283A536200C94E0E /* DependencyInjectionService in Frameworks */,
 				5E97C9BF283A407E00C94E0E /* NetworkService in Frameworks */,
 				5E97C9C2283A41F700C94E0E /* LocationService in Frameworks */,
 			);
@@ -83,6 +86,7 @@
 		5E97C983283A371000C94E0E = {
 			isa = PBXGroup;
 			children = (
+				5E97C9C3283A534E00C94E0E /* DependencyInjectionService */,
 				5E97C9C0283A41E500C94E0E /* LocationService */,
 				5E97C9BD283A406D00C94E0E /* NetworkService */,
 				5E97C9B9283A3E9F00C94E0E /* BikeStationFeature */,
@@ -167,6 +171,7 @@
 				5E97C9BB283A3F0F00C94E0E /* BikeStationFeature */,
 				5E97C9BE283A407E00C94E0E /* NetworkService */,
 				5E97C9C1283A41F700C94E0E /* LocationService */,
+				5E97C9C4283A536200C94E0E /* DependencyInjectionService */,
 			);
 			productName = "Digikraft-BikeStation";
 			productReference = 5E97C98C283A371000C94E0E /* Digikraft-BikeStation.app */;
@@ -615,6 +620,10 @@
 		5E97C9C1283A41F700C94E0E /* LocationService */ = {
 			isa = XCSwiftPackageProductDependency;
 			productName = LocationService;
+		};
+		5E97C9C4283A536200C94E0E /* DependencyInjectionService */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = DependencyInjectionService;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
