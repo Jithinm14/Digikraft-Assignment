@@ -7,7 +7,7 @@
 
 import Foundation
 
-enum HTTPMethod: String, CaseIterable {
+public enum HTTPMethod: String, CaseIterable {
     case get = "GET"
     case post = "POST"
     case put = "PUT"
@@ -22,7 +22,7 @@ enum NetworkError: Error {
     case invalidData
 }
 
-protocol DataRequest {
+public protocol DataRequest {
     
     associatedtype Response
     
@@ -34,7 +34,7 @@ protocol DataRequest {
     func decode(data: Data) throws -> Response
 }
 
-extension DataRequest {
+public extension DataRequest {
     
     var queryParams: [String : String] {
         [:]
@@ -46,7 +46,7 @@ extension DataRequest {
     
 }
 
-extension DataRequest where Response: Decodable {
+public extension DataRequest where Response: Decodable {
     
     func decode(data: Data) throws -> Response {
         let decoder = JSONDecoder()
@@ -55,13 +55,13 @@ extension DataRequest where Response: Decodable {
     
 }
 
-protocol NetworkServiceProtocol {
+public protocol NetworkServiceProtocol {
     func fetchData<Request: DataRequest>(request: Request, completion: @escaping (Result<Request.Response, Error>) -> Void)
 }
 
-final class NetworkService: NetworkServiceProtocol {
+public final class NetworkService: NetworkServiceProtocol {
     
-    func fetchData<Request>(request: Request, completion: @escaping (Result<Request.Response, Error>) -> Void) where Request : DataRequest {
+    public func fetchData<Request>(request: Request, completion: @escaping (Result<Request.Response, Error>) -> Void) where Request : DataRequest {
         
         guard var urlComponent = URLComponents(string: request.urlString) else {
             return completion(.failure(NetworkError.invalidUrl))
